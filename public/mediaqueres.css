@@ -1,0 +1,48 @@
+/* Celulares */
+
+@media screen and (max-width: 450px) {
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      height: 600px;
+    }
+  
+    .destaques {
+      text-align: center;
+      font-weight: 400;
+      font-size: 25px;
+      margin-left: 15%;
+    }
+  
+    h1 {
+      width: 300px;
+      font-weight: 400px;
+      font-size: 20px;
+    }
+  
+    h3 {
+      margin: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-left: auto;
+    }
+    ul {
+      margin-right: 30px;
+    }
+  
+    .button {
+      margin-right: 10px;
+    }
+  
+  
+    /*Cabeçalho*/
+  
+    .navbar,
+    .input-wrapper {
+      display: none;
+    }
+  }

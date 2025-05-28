@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #f0f0f0;
+    font-family: "Lato", sans-serif;
+}
+
+.header-content {
+    background-color: #c94f1a;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.input-wrapper{
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+    width: 100%;
+
+}
+
+img {
+    justify-content: center;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.imgheader
+{
+    justify-content: center;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.footer
+{
+    background-color: #c94f1a;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.receitamexidinho
+{
+    display: inline;
+    width: 500px;
+    margin: auto;
+    padding: 50px; 
+    margin: 50px auto;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.receitamacarrao
+{
+    display: inline;
+    width: 500px;
+    margin: auto;
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+
+.receitasobremesa
+{
+    display: inline;
+    width: 500px;
+    margin: auto;
+    padding: 50px; 
+    margin: 50px auto;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.h1receita
+{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    color: #c94f1a;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+
+
+h1
+{
+    text-align: left;
+    font-weight: 400;
+    font-size: 40px;
+    color: #c94f1a;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+h3
+{
+    padding-left: 30px;
+}
+
+li
+{
+    list-style: inside;
+    line-height: 35px; 
+}
+
+ul
+{
+    margin-bottom: 40px;
+}
+
+button
+{
+    border: none;
+    margin-top: 50px;
+    text-decoration: none;
+    background-color: #c94f1a;
+    color: white;
+    padding: 15px;
+    font-weight: 400px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover
+{
+    background-color: #be6b47;
+    transform: scale(1.01);
+}
+
+.titulo-receita
+{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.link-footer
+{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
