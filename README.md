@@ -9,8 +9,8 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome: 
-- Matricula:
+- Nome: Miguel Campos Soares Querino 
+- Matricula: 882253
 - Proposta de projeto escolhida:
 - Breve descrição sobre seu projeto:
 
