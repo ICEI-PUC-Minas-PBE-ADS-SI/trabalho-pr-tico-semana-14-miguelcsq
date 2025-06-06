@@ -9,7 +9,7 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
+- Nome: 
 - Matricula:
 - Proposta de projeto escolhida:
 - Breve descrição sobre seu projeto:
@@ -18,6 +18,6 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 << Coloque aqui uma breve explicação da implementação feita nessa etapa>>
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+<<  ![alt text]({6647A5C0-825B-4747-AEBF-46E8593F1873}.png) >>
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+<<  ![alt text]({CBEF66AA-3138-4962-A998-E7FDFE15CB60}.png) >>

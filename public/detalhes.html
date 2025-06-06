@@ -36,7 +36,7 @@
             <h1></h1>
             <ul class="ingredientes">
                 <li id="ingrediente1"></li>
-                <li id="ingrediente2"></li>
+                <li id="ingrediente2"></li> 
                 <li id="ingrediente3"></li>
                 <li id="ingrediente4"></li>
                 <li id="ingrediente5"></li>
@@ -66,63 +66,57 @@
         </div>
     </footer>
     <script src="app.js"></script>
-    <script>
-        const listas = document.querySelectorAll(".ingredientes li")
-         
-        let idcopy= location.search 
-        let trueid= idcopy.slice(4,999)
+<script>
+    const listas = document.querySelectorAll(".ingredientes li");
 
-        function ControledeTexto(X,Y)
-        {
-            document.getElementById(X).textContent=Y
-        }
+    // Pega o ID corretamente da URL
+    let params = new URLSearchParams(location.search);
+    let trueid = params.get("id");
 
-        function ControledeImagem(X,Y)
-        {
-            document.getElementById(X).src=Y
-        }
+    function ControledeTexto(X, Y) {
+        document.getElementById(X).textContent = Y;
+    }
 
-        async function fetchData()
-        {
-        try
-        {
-            const response=await fetch('http://localhost:3000/receitas');
+    function ControledeImagem(X, Y) {
+        document.getElementById(X).src = Y;
+    }
 
-            if(!response.ok)
-            {
-            throw new Error("NAO DEU")
+    async function fetchData() {
+        try {
+            const response = await fetch('http://localhost:3000');
+
+            if (!response.ok) {
+                throw new Error("Erro ao buscar receitas");
             }
 
-            const receitas= await response.json();
-            console.log(receitas);
-        }
+            const receitas = await response.json();
 
-        catch(error){    
-        console.log(error);
-        }
-        }
+            document.getElementById("imagem1").src = receitas[trueid].imagem;
+            document.getElementById("titulo").textContent = receitas[trueid].titulo;
+            document.getElementById("ingrediente1").textContent = receitas[trueid].ingredientes.ingrediente1;
+            document.getElementById("ingrediente2").textContent = receitas[trueid].ingredientes.ingrediente2;
+            document.getElementById("ingrediente3").textContent = receitas[trueid].ingredientes.ingrediente3;
+            document.getElementById("ingrediente4").textContent = receitas[trueid].ingredientes.ingrediente4;
+            document.getElementById("ingrediente5").textContent = receitas[trueid].ingredientes.ingrediente5;
+            document.getElementById("ingrediente6").textContent = receitas[trueid].ingredientes.ingrediente6;
+            document.getElementById("ingrediente7").textContent = receitas[trueid].ingredientes.ingrediente7;
+            document.getElementById("ingrediente8").textContent = receitas[trueid].ingredientes.ingrediente8;
+            document.getElementById("ingrediente9").textContent = receitas[trueid].ingredientes.ingrediente9;
+            document.getElementById("ingrediente10").textContent = receitas[trueid].ingredientes.ingrediente10;
 
-        fetchData()
-        
-        document.getElementById("imagem1").src=receitas[trueid].imagem
-        document.getElementById("titulo").textContent=receitas[trueid].titulo
-        document.getElementById("ingrediente1").textContent=receitas[trueid].ingredientes.ingrediente1
-        document.getElementById("ingrediente2").textContent=receitas[trueid].ingredientes.ingrediente2
-        document.getElementById("ingrediente3").textContent=receitas[trueid].ingredientes.ingrediente3
-        document.getElementById("ingrediente4").textContent=receitas[trueid].ingredientes.ingrediente4
-        document.getElementById("ingrediente5").textContent=receitas[trueid].ingredientes.ingrediente5
-        document.getElementById("ingrediente6").textContent=receitas[trueid].ingredientes.ingrediente6
-        document.getElementById("ingrediente7").textContent=receitas[trueid].ingredientes.ingrediente7
-        document.getElementById("ingrediente8").textContent=receitas[trueid].ingredientes.ingrediente8
-        document.getElementById("ingrediente9").textContent=receitas[trueid].ingredientes.ingrediente9
-        document.getElementById("ingrediente10").textContent=receitas[trueid].ingredientes.ingrediente10
-        document.getElementById("preparo1").textContent=receitas[trueid].preparo.preparo1
-        document.getElementById("preparo2").textContent=receitas[trueid].preparo.preparo2
-        document.getElementById("preparo3").textContent=receitas[trueid].preparo.preparo3
-        document.getElementById("preparo4").textContent=receitas[trueid].preparo.preparo4
-        document.getElementById("preparo5").textContent=receitas[trueid].preparo.preparo5
-        document.getElementById("preparo6").textContent=receitas[trueid].preparo.preparo6
-    </script>
+            document.getElementById("preparo1").textContent = receitas[trueid].preparo.preparo1;
+            document.getElementById("preparo2").textContent = receitas[trueid].preparo.preparo2;
+            document.getElementById("preparo3").textContent = receitas[trueid].preparo.preparo3;
+            document.getElementById("preparo4").textContent = receitas[trueid].preparo.preparo4;
+            document.getElementById("preparo5").textContent = receitas[trueid].preparo.preparo5;
+            document.getElementById("preparo6").textContent = receitas[trueid].preparo.preparo6;
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    fetchData();
+</script>
 </body>
 </html>
 
